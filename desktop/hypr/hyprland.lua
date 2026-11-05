@@ -15,7 +15,7 @@ hl.monitor({
 
 local terminal    = "kitty"
 local fileManager = "dolphin"
-local menu        = "wofi -show drun"
+local menu        = "wofi --show drun"
 
 -------------------
 ---- AUTOSTART ----
@@ -194,7 +194,9 @@ hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ mode = "fullscreen", action = "toggle" }))
 hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd("hyprctl switchxkblayout all next"))
 hl.bind(mainMod .. " + TAB", hl.dsp.focus({ workspace = "e+1" }))
+
 hl.bind(mainMod .. " + SHIFT + TAB", hl.dsp.focus({ workspace = "e-1" }))
+hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd("bash $HOME/.config/hypr/scripts/screenshot.sh"))
 
 hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))

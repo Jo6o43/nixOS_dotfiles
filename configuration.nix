@@ -47,9 +47,7 @@
 	curl
 	pciutils
 	tree
-	
-	libnotify
-	mako
+
 	grim
 	slurp
 	wl-clipboard
