@@ -1,0 +1,121 @@
+@define-color foreground #eeeeee;
+@define-color foreground-inactive #aaaaaa;
+@define-color background #000000;
+
+* {
+    font-family: JetBrainsMono Nerd Font;
+    font-size: 17px;
+    padding: 0;
+    margin: 0;
+}
+
+#waybar {
+    color: @foreground;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#workspaces button {
+    color: @foreground;
+    min-height: 24px;
+    padding: 0 0.5em;
+    margin: 0 0.2em;
+    font-weight: bold;
+}
+
+#workspaces button.empty {
+    color: @foreground-inactive;
+}
+
+/* Workspaces */
+#workspaces button {
+    background-color: transparent;
+    color: #aaaaaa;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* Workspace ativo */
+#workspaces button.active {
+    background-color: #303030;
+    color: #ffffff;
+}
+
+/* Hover */
+#workspaces button:hover {
+    background-color: #252525;
+    color: #ffffff;
+}
+
+/* Workspace ativo com hover */
+#workspaces button.active:hover {
+    background-color: #383838;
+}
+
+
+#memory,
+#wireplumber,
+#battery,
+#idle_inhibitor,
+#language,
+#network,
+#bluetooth,
+#tray {
+    padding: 0 0.5em;
+}
+
+/* Battery */
+#battery {
+    color: #eeeeee;
+    padding: 0 0.5em;
+}
+
+/* Battery below 25% */
+#battery.warning {
+    color: #d7ba7d;
+}
+
+/* Battery below 10% */
+#battery.critical {
+    color: #e06c75;
+    font-weight: bold;
+}
+
+/* Charging or connected */
+#battery.charging,
+#battery.plugged,
+#battery.full {
+    color: #eeeeee;
+}
+
+
+/* Tooltip appearance */
+tooltip {
+    background-color: rgba(0, 0, 0, 0.95);
+    border: 1px solid #595959;
+    border-radius: 0;
+}
+
+/* Tooltip text */
+tooltip label {
+    color: #eeeeee;
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 13px;
+    padding: 6px 10px;
+}
+
+/* GPU module */
+#custom-gpu {
+    padding: 0 0.5em;
+    color: #eeeeee;
+}
+
+/* Lid inhibitor */
+#custom-lid-inhibit {
+    padding: 0 0.5em;
+    color: #eeeeee;
+}
+
+#custom-lid-inhibit.off {
+    opacity: 0.5;
+}
