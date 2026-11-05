@@ -3,8 +3,10 @@
 
 {
   imports = [
-	./modules/home/mako.nix
-  ];
+	./modules/mako.nix
+	./modules/clipboard.nix
+  	./modules/rofi.nix 
+ ];
 
   home.username = "jo6o";
   home.homeDirectory = "/home/jo6o";

@@ -15,7 +15,7 @@ hl.monitor({
 
 local terminal    = "kitty"
 local fileManager = "dolphin"
-local menu        = "wofi --show drun"
+local menu        = "rofi -show drun"
 
 -------------------
 ---- AUTOSTART ----
@@ -197,6 +197,7 @@ hl.bind(mainMod .. " + TAB", hl.dsp.focus({ workspace = "e+1" }))
 
 hl.bind(mainMod .. " + SHIFT + TAB", hl.dsp.focus({ workspace = "e-1" }))
 hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd("bash $HOME/.config/hypr/scripts/screenshot.sh"))
+hl.bind(mainMod .. " + SHIFT + V", hl.dsp.exec_cmd("bash $HOME/.config/hypr/scripts/clipboard-history.sh"))
 
 hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))

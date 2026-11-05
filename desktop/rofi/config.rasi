@@ -1,0 +1,98 @@
+
+configuration {
+    modi: "drun,run,window";
+    show-icons: true;
+    drun-display-format: "{name}";
+}
+
+/* Colors */
+* {
+    bg: #000000e6;
+    bg-alt: #191919;
+    fg: #eeeeee;
+    fg-alt: #aaaaaa;
+    selected-bg: #303030;
+
+    font: "JetBrainsMono Nerd Font 11";
+}
+
+/* Main window */
+window {
+    width: 760px;
+    padding: 10px;
+    border: 1px;
+    border-color: #595959aa;
+    border-radius: 0px;
+    background-color: @bg;
+}
+
+/* Layout */
+mainbox {
+    spacing: 8px;
+    background-color: transparent;
+}
+
+/* Search */
+inputbar {
+    padding: 9px 12px;
+    background-color: @bg-alt;
+    children: [entry];
+}
+
+entry {
+    background-color: transparent;
+    text-color: @fg;
+    placeholder: "";
+    placeholder-color: @fg-alt;
+}
+
+/* Application list */
+listview {
+    lines: 9;
+    columns: 1;
+    spacing: 2px;
+    scrollbar: false;
+    background-color: transparent;
+}
+
+/* Application entries */
+element {
+    padding: 5px 9px;
+    spacing: 9px;
+    border: 0px;
+    border-radius: 0px;
+    background-color: transparent;
+    text-color: @fg;
+}
+
+/* Normal entries */
+element normal.normal,
+element alternate.normal,
+element normal.active,
+element alternate.active,
+element normal.urgent,
+element alternate.urgent {
+    background-color: transparent;
+    text-color: @fg;
+}
+
+/* Selected entries */
+element selected.normal,
+element selected.active,
+element selected.urgent {
+    background-color: @selected-bg;
+    text-color: @fg;
+}
+
+/* Application icons */
+element-icon {
+    size: 17px;
+    background-color: transparent;
+}
+
+/* Application names */
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+    vertical-align: 0.5;
+}
