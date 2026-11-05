@@ -47,7 +47,16 @@
 	curl
 	pciutils
 	tree
-
+	
+	libnotify
+	mako
+	grim
+	slurp
+	wl-clipboard
+	cliphist	
+	pavucontrol
+	brightnessctl
+	playerctl
 	kitty
 	waybar
 	wofi
@@ -62,6 +71,7 @@
 	discord
 	neovim
 	spotify
+	tailscale
   ];
 
   nix.settings.experimental-features = [

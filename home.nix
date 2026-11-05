@@ -2,6 +2,10 @@
 { ... }:
 
 {
+  imports = [
+	./modules/home/mako.nix
+  ];
+
   home.username = "jo6o";
   home.homeDirectory = "/home/jo6o";
   home.stateVersion = "26.05";
