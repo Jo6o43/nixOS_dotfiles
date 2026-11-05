@@ -8,15 +8,12 @@
 	./modules/qt.nix
     ];
 
-  # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  # Configure network connections interactively with nmcli or nmtui.
   networking.hostName = "nixos";
   networking.networkmanager.enable = true;
 
-  # Set your time zone.
   time.timeZone = "Europe/Lisbon";
   i18n.defaultLocale = "en_GB.UTF-8";
 

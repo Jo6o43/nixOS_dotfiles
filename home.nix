@@ -5,7 +5,8 @@
   imports = [
 	./modules/mako.nix
 	./modules/clipboard.nix
-  	./modules/rofi.nix 
+  	./modules/rofi.nix
+	./modules/neovim.nix 
  ];
 
   home.username = "jo6o";
